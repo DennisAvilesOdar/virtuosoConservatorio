@@ -180,7 +180,6 @@ body > section {
 
 .navbar>.container .navbar-brand{
   margin-left: 0;
-  margin-bottom: 2;
 }
 
 .top-bar {
@@ -260,7 +259,7 @@ input.search-form:hover {
 
 .navbar-brand {
   padding: 0;
-  margin:0;
+  margin:1;
 }
 
 .navbar {
