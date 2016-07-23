@@ -180,6 +180,7 @@ body > section {
 
 .navbar>.container .navbar-brand{
   margin-left: 0;
+  margin-top: 2px;
 }
 
 .top-bar {
