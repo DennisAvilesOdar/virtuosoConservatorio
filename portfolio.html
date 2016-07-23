@@ -90,7 +90,7 @@
             <div class="row">
 
             <div class="col-md-8">
-                <img class="img-responsive" src="../virtuoso/images/maximo/imagen1.jpg" id="imagenGrande" />
+                <img class="img-responsive" src="http://placehold.it/750x500" alt=""/>
             </div>
 
             <div class="col-md-4">
@@ -114,15 +114,15 @@
                 <h3 class="page-header">Related Projects</h3>
             </div>
 
-            <div id="thumbs" class="col-sm-3 col-xs-6">
-                <a>
-                    <img class="img-responsive portfolio-item" src="../virtuoso/images/minimo/imagen1.jpg" data-img="../virtuoso/images/maximo/imagen1.jpg" alt="">
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
                 <a href="#">
-                    <img class="img-responsive portfolio-item" src="../virtuoso/images/minimo/imagen2.jpg" data-img="../virtuoso/images/maximo/imagen2.jpg" alt="">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
                 </a>
             </div>
 
@@ -274,21 +274,5 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
-    <script language="javascript">
-    $(document).ready(function(){
- 
-    //selector de imagenes a aplicar la funcionalidad de click
-    $("#thumbs img").click(function(){
- 
-        //obtenemos la imagen a mostrar
-        urlImagenGrande=$(this).data("img");
- 
-        //asignamos la imagen por medio de prop
-        $("#imagenGrande").prop("src",urlImagenGrande);
- 
-    })
- 
-    });
-    </script>
 </body>
 </html>
