@@ -89,8 +89,8 @@
             
             <div class="row">
 
-            <div class="col-sm-3 col-xs-6 fancyzoom">
-                <a href="images/virtuoso/imagen1.jpg" >
+            <div id="demo" class="col-sm-3 col-xs-6">
+                <a href="images/virtuoso/imagen1.jpg" id="1">
                     <img class="img-responsive portfolio-item" src="images/virtuoso/imagen1-small.jpg" alt="">
                 </a>
             </div>
@@ -283,9 +283,7 @@
     <script type="text/javascript">
         $(function() {
                 $.fn.fancyzoom.defaultsOptions.imgDir='../images/ressources/'; 
-                $('#gallery a').fancyzoom(); 
-                $('a.tozoom').fancyzoom({Speed:1000});
-                $('a').fancyzoom({overlay:0.8});
+                $('#demo > a:first').fancyzoom({Speed:400,showoverlay:false}); 
                 $('img.fancyzoom').fancyzoom();
         });
     </script>
