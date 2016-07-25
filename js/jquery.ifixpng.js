@@ -39,7 +39,7 @@
 	};
 	
 	$.ifixpng.getPixel = function() {
-		return $.ifixpng.pixel || 'ressources/blank.gif';
+		return $.ifixpng.pixel || '../images/ressources/blank.gif';
 	};
 	
 	var hack = {
