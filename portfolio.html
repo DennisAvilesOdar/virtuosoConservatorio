@@ -282,8 +282,16 @@
     <script src="js/wow.min.js"></script>
     <script type="text/javascript">
         $(function() {
-                $.fn.fancyzoom.defaultsOptions.imgDir='../images/ressources/'; 
-                $('#demo > a:first').fancyzoom({Speed:400,showoverlay:false}); 
+                 $.fn.fancyzoom.defaultsOptions.imgDir='../images/'; //very important must finish with a /
+                $('#demo a').fancyzoom(); 
+
+                // Select all links with tozoom class, set the open animation time to 1000
+                $('a.tozoom').fancyzoom({Speed:1000});
+
+                // Select all links set the overlay opacity to 80%
+                $('a').fancyzoom({overlay:0.8});
+
+                $('img.fancyzoom').fancyzoom();
         });
     </script>
 </body>
