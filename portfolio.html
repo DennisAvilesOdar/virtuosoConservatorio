@@ -114,15 +114,15 @@
                 <h3 class="page-header">Related Projects</h3>
             </div>
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="images/minimo/imagen1.jpg" alt="">
+            <div class="col-sm-3 col-xs-6 fancyzoom">
+                <a href="images/virtuoso/imagen1.jpg" >
+                    <img class="img-responsive portfolio-item" src="images/minimo/imagen1-small.jpg" alt="">
                 </a>
             </div>
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="images/minimo/imagen2.jpg" alt="">
+            <div class="col-sm-3 col-xs-6 fancyzoom">
+                <a href="images/minimo/imagen2-small.jpg" rel="prettyPhoto[gallery1]">
+                    <img class="img-responsive portfolio-item" src="images/minimo/imagen2-small.jpg" alt="">
                 </a>
             </div>
 
@@ -144,13 +144,13 @@
 
             <div class="col-sm-3 col-xs-6">
                 <a href="#">
-                    <img class="img-responsive portfolio-item" src="images/minimo/imagen1.jpg" alt="">
+                    <img class="img-responsive portfolio-item" src="images/minimo/imagen1-small.jpg" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
                 <a href="#">
-                    <img class="img-responsive portfolio-item" src="images/minimo/imagen2.jpg" alt="">
+                    <img class="img-responsive portfolio-item" src="images/minimo/imagen2-small.jpg" alt="">
                 </a>
             </div>
 
@@ -297,10 +297,22 @@
     </footer><!--/#footer-->
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.shadow.js"></script>
+    <script src="js/jquery.ifixpng.js"></script>
+    <script src="js/jquery.fancyzoom.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+                $.fn.fancyzoom.defaultsOptions.imgDir='../images/virtuoso/'; 
+                $('#gallery a').fancyzoom(); 
+                $('a.tozoom').fancyzoom({Speed:1000});
+                $('a').fancyzoom({overlay:0.8});
+                $('img.fancyzoom').fancyzoom();
+        });
+    </script>
 </body>
 </html>
